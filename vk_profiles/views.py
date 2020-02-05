@@ -8,7 +8,7 @@ from vk_profiles.models import Profile
 from vk_profiles.serializers import ProfileSerializer
 
 
-class ProfileViewSet(viewsets.ModelViewSet):
+class ProfileViewSet(viewsets.ModelViewSetп):
     permission_classes = (permissions.AllowAny,)
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
